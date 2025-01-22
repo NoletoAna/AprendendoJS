@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moeda</title>
+
+    <style>
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: auto;
+            width: auto;
+            background-color: darksalmon;
+            border-radius: 5px;
+            border: solid 2px black;
+            flex-direction: column;
+        }
+
+        h1 {
+            font: 20pt arial black;
+        }
+
+        p {
+            margin-bottom: 5px;
+            font: 15pt arial;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Conversor de Moeda</h1>
+        <p>
+            O valor ${valor} corresponde a ${total.toLocaleString('pt-br', { style: 'currency', currency: 'USD'
+            <!-- <script>
+                var valor = window.prompt('Insira um valor em R$: ')
+                var cotação = window.prompt('Insira a cotação do Dólar hoje: ')
+    
+                total = valor * cotação
+    
+                document.write(`O valor ${valor} corresponde a ${total.toLocaleString('pt-br', { style: 'currency', currency: 'USD' })}`)
+    
+            </script> -->
+        </p>
+    </div>
+
+</body>
+
+</html>

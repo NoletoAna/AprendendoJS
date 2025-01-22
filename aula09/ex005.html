@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros Passos com DOM</title>
+    <style>
+        body {
+            background: rgb(112, 177, 170);
+            color: white;
+            font: normal 18pt arial;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Iniciando Estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+        var corpo = window.document.body
+        // acessa o elemento através da sua MARCA, no caso o 'p', selecionando o primeiro (0), o segundo seria 1 e assim sucessivamente
+        var p1 = window.document.getElementsByTagName('p')[1]
+        // acessa o elemento através do seu ID
+        /*
+        var d = window.document.getElementById('msg')
+        d.style.background = 'green'
+        d.innerHTML = 'Estou aguardando...'
+        */
+
+        // acessa elemento usando CLASSES (.) ou ID (#) do CSS
+        var d = window.document.querySelector('div#msg')
+        d.style.color = 'blue'
+    </script>
+</body>
+
+</html>

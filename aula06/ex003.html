@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro Programa</title>
+    <style>
+        body{
+            background-color: #b8d2d3;
+            color: white;
+            font: normal 15pt Arial;
+        }
+
+        h1{
+            color: rgb(255, 240, 31);
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>Já me livrei da maldição!!</p>
+
+    <!-- CONVERSÃO DE DADOS -->
+    <script>
+        // AQUI TRANSFORMA EM NUMERO INTEIRO (Number.parseInt())
+        // var n1 = Number.parseInt(window.prompt('Digite um número: '))
+
+        // AQUI TRANSFORMA EM NUMERO COM VÍRGULA (Number.parseFloat())
+        // var n2 = Number.parseFloat(window.prompt('Digite outro número: '))
+
+        // AQUI O JS DETERMINA QUAL TIPO DE NÚMERO SERÁ DE ACORDO COM O QUE O USUÁRIO INSERIR (Number())
+        var n1 = Number(window.prompt('Digite um número: '))
+        var n2 = Number(window.prompt('Digite outro número: '))
+        var s = n1+n2
+        window.alert('A soma dos valores é: '+s) //concatenação
+
+        // (number + number) para adição
+        // (string + string) para concatenação
+
+        // String(var) converte em string
+        // var.toString converte em string
+    </script>
+</body>
+</html>
